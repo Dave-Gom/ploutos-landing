@@ -1,4 +1,4 @@
-export default function NameSection() {
+const NameSection = () => {
   return (
     <section
       id="about"
@@ -29,4 +29,6 @@ export default function NameSection() {
       </div>
     </section>
   );
-}
+};
+
+export default NameSection;

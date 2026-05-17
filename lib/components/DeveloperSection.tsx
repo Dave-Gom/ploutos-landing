@@ -1,4 +1,4 @@
-export default function DeveloperSection() {
+const DeveloperSection = () => {
   return (
     <section id="developer" className="py-24">
       <div className="mx-auto max-w-[1180px] px-6">
@@ -63,4 +63,6 @@ export default function DeveloperSection() {
       </div>
     </section>
   );
-}
+};
+
+export default DeveloperSection;

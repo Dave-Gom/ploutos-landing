@@ -8,7 +8,7 @@ import DeveloperSection from "@/lib/components/DeveloperSection";
 import Footer from "@/lib/components/Footer";
 import RevealObserver from "@/lib/components/RevealObserver";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Navbar />
@@ -24,4 +24,6 @@ export default function Home() {
       <RevealObserver />
     </>
   );
-}
+};
+
+export default Home;

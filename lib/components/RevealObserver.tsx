@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-export default function RevealObserver() {
+const RevealObserver = () => {
   useEffect(() => {
     const io = new IntersectionObserver(
       (entries) => {
@@ -22,4 +22,6 @@ export default function RevealObserver() {
   }, []);
 
   return null;
-}
+};
+
+export default RevealObserver;

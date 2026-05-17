@@ -1,6 +1,6 @@
 import PhoneFrame from "./PhoneFrame";
 
-export default function ShowcaseSection() {
+const ShowcaseSection = () => {
   return (
     <section className="overflow-hidden bg-gradient-to-b from-bg-2 to-white py-24">
       <div className="mx-auto max-w-[1180px] px-6">
@@ -39,4 +39,6 @@ export default function ShowcaseSection() {
       </div>
     </section>
   );
-}
+};
+
+export default ShowcaseSection;

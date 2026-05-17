@@ -1,6 +1,6 @@
 import PhoneFrame from "./PhoneFrame";
 
-export default function HeroSection() {
+const HeroSection = () => {
   return (
     <header className="relative overflow-hidden py-20">
       {/* Background gradient blobs */}
@@ -99,4 +99,6 @@ export default function HeroSection() {
       </div>
     </header>
   );
-}
+};
+
+export default HeroSection;

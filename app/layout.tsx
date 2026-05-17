@@ -40,11 +40,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) => {
   return (
     <html lang="es" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-bg text-text font-body">
@@ -52,4 +52,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

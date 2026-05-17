@@ -19,7 +19,7 @@ const steps = [
   },
 ];
 
-export default function HowItWorksSection() {
+const HowItWorksSection = () => {
   return (
     <section id="how" className="py-24">
       <div className="mx-auto max-w-[1180px] px-6">
@@ -60,4 +60,6 @@ export default function HowItWorksSection() {
       </div>
     </section>
   );
-}
+};
+
+export default HowItWorksSection;

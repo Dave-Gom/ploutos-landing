@@ -76,7 +76,7 @@ const features = [
   },
 ];
 
-export default function FeaturesSection() {
+const FeaturesSection = () => {
   return (
     <section id="features" className="bg-bg-2 py-24">
       <div className="mx-auto max-w-[1180px] px-6">
@@ -109,4 +109,6 @@ export default function FeaturesSection() {
       </div>
     </section>
   );
-}
+};
+
+export default FeaturesSection;

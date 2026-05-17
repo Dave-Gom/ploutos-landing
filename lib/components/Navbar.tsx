@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export default function Navbar() {
+const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -89,4 +89,6 @@ export default function Navbar() {
       )}
     </nav>
   );
-}
+};
+
+export default Navbar;
