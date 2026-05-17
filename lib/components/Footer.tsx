@@ -1,9 +1,16 @@
-const Footer = () => {
+import type { Locale } from "@/infrastructure/types/locale";
+import type { FooterTranslations } from "@/infrastructure/types/translations/common";
+
+interface FooterProps {
+  lang: Locale;
+  labels: FooterTranslations;
+}
+
+const Footer = ({ labels }: FooterProps) => {
   return (
     <footer className="bg-text pt-14 pb-8 text-[#B8C0CC]">
       <div className="mx-auto max-w-[1180px] px-6">
         <div className="grid grid-cols-1 gap-7 border-b border-white/[0.08] pb-9 sm:grid-cols-[1.4fr_1fr_1fr] sm:gap-10">
-          {/* Brand */}
           <div>
             <div className="mb-3 flex items-center gap-2.5 text-lg font-bold text-white">
               <span className="grid h-[30px] w-[30px] place-items-center rounded-lg bg-primary text-[16px] font-extrabold text-[#1c3a26]">
@@ -11,39 +18,34 @@ const Footer = () => {
               </span>
               Ploutos
             </div>
-            <p className="max-w-[360px] text-sm leading-relaxed">
-              Una app de finanzas personales para entender y gestionar tu dinero con claridad. Sin nubes ni cuentas. Tus datos, en tu dispositivo.
-            </p>
+            <p className="max-w-[360px] text-sm leading-relaxed">{labels.blurb}</p>
           </div>
 
-          {/* App links */}
           <div>
             <h5 className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.08em] text-white">
-              App
+              {labels.appTitle}
             </h5>
             <ul className="grid gap-2.5 text-sm">
-              <li><a href="#features" className="transition-colors hover:text-white">Funciones</a></li>
-              <li><a href="#how" className="transition-colors hover:text-white">Como funciona</a></li>
-              <li><a href="#about" className="transition-colors hover:text-white">El nombre</a></li>
+              <li><a href="#features" className="transition-colors hover:text-white">{labels.features}</a></li>
+              <li><a href="#how" className="transition-colors hover:text-white">{labels.howItWorks}</a></li>
+              <li><a href="#about" className="transition-colors hover:text-white">{labels.theName}</a></li>
             </ul>
           </div>
 
-          {/* Legal */}
           <div>
             <h5 className="mb-3.5 text-[13px] font-bold uppercase tracking-[0.08em] text-white">
-              Legal & Contacto
+              {labels.legalTitle}
             </h5>
             <ul className="grid gap-2.5 text-sm">
-              <li><a href="#" className="transition-colors hover:text-white">Privacy Policy</a></li>
+              <li><a href="#" className="transition-colors hover:text-white">{labels.privacyPolicy}</a></li>
               <li><a href="mailto:privacy@davegzarca.dev" className="transition-colors hover:text-white">privacy@davegzarca.dev</a></li>
               <li><a href="https://davegzarca.dev/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-white">davegzarca.dev</a></li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom */}
         <div className="flex flex-wrap items-center justify-between gap-4 pt-6 text-[13px] text-neutral">
-          <div>&copy; 2026 David Gomez. Todos los derechos reservados.</div>
+          <div>{labels.copyright}</div>
           <div className="flex gap-2.5">
             <a
               href="#"

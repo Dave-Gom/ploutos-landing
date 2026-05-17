@@ -1,4 +1,10 @@
-const NameSection = () => {
+import type { NameTranslations } from "@/infrastructure/types/translations/sections";
+
+interface NameSectionProps {
+  t: NameTranslations;
+}
+
+const NameSection = ({ t }: NameSectionProps) => {
   return (
     <section
       id="about"
@@ -14,7 +20,7 @@ const NameSection = () => {
       <div className="mx-auto max-w-[1180px] px-6">
         <div className="reveal mx-auto max-w-[820px] px-9 py-14 text-center">
           <span className="mb-4 inline-block text-xs font-bold uppercase tracking-[0.16em] text-primary-deep">
-            Por que Ploutos?
+            {t.eyebrow}
           </span>
           <div
             className="mb-6 text-[clamp(56px,9vw,110px)] font-bold leading-none tracking-[-0.02em]"
@@ -23,7 +29,7 @@ const NameSection = () => {
             Πλοῦτος
           </div>
           <p className="text-[clamp(19px,2vw,22px)] leading-relaxed text-text-2 [text-wrap:pretty]">
-            En la mitologia griega, Ploutos era la personificacion de la riqueza obtenida a traves del trabajo honesto. Un guardian silencioso de tus finanzas.
+            {t.description}
           </p>
         </div>
       </div>

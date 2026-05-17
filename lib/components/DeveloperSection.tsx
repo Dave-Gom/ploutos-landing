@@ -1,13 +1,19 @@
-const DeveloperSection = () => {
+import type { DeveloperTranslations } from "@/infrastructure/types/translations/sections";
+
+interface DeveloperSectionProps {
+  t: DeveloperTranslations;
+}
+
+const DeveloperSection = ({ t }: DeveloperSectionProps) => {
   return (
     <section id="developer" className="py-24">
       <div className="mx-auto max-w-[1180px] px-6">
         <div className="reveal mx-auto mb-10 max-w-[760px] text-center">
           <span className="mb-3 inline-block text-[13px] font-semibold uppercase tracking-[0.08em] text-primary-deep">
-            Creado por
+            {t.eyebrow}
           </span>
           <h2 className="text-[clamp(32px,4vw,48px)] font-extrabold leading-[1.05] tracking-[-0.025em]">
-            Un proyecto independiente.
+            {t.title}
           </h2>
         </div>
 
@@ -29,10 +35,10 @@ const DeveloperSection = () => {
 
           <div className="reveal text-center md:text-left">
             <h2 className="mb-3 text-[clamp(28px,3vw,38px)] font-extrabold tracking-[-0.02em]">
-              David <span className="text-primary-deep">Gomez</span>
+              {t.name} <span className="text-primary-deep">{t.nameLast}</span>
             </h2>
             <p className="mb-5 text-[17px] leading-relaxed text-text-2 [text-wrap:pretty]">
-              Desarrollador de software enfocado en experiencias moviles limpias y funcionales. Ploutos nacio de una necesidad personal: una app de finanzas que simplemente funcione, sin friccion ni complejidad innecesaria.
+              {t.bio}
             </p>
             <div className="inline-flex flex-wrap justify-center gap-2.5 md:justify-start">
               <a
@@ -41,7 +47,7 @@ const DeveloperSection = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-text px-5 py-3 text-[14.5px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-[#0E1620]"
               >
-                Visitar portfolio
+                {t.visitPortfolio}
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M7 17L17 7M9 7h8v8" />
                 </svg>
