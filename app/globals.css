@@ -51,7 +51,11 @@ html {
   }
 }
 
-body {
+body,
+button,
+input,
+select,
+textarea {
   font-family: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont,
     sans-serif;
   -webkit-font-smoothing: antialiased;
