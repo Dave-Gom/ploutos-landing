@@ -37,7 +37,7 @@ const Footer = ({ labels }: FooterProps) => {
               {labels.legalTitle}
             </h5>
             <ul className="grid gap-2.5 text-sm">
-              <li><a href="#" className="transition-colors hover:text-white">{labels.privacyPolicy}</a></li>
+              <li><a href="/assets/docs/privacy-policy.pdf" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-white">{labels.privacyPolicy}</a></li>
               <li><a href="mailto:privacy@davegzarca.dev" className="transition-colors hover:text-white">privacy@davegzarca.dev</a></li>
               <li><a href="https://davegzarca.dev/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-white">davegzarca.dev</a></li>
             </ul>
