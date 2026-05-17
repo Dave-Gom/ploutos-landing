@@ -38,7 +38,7 @@ const sections: SectionsTranslations = {
     },
     privacy: {
       title: "Ñemigua tuicha",
-      desc: "Cuenta'ỹre, servidor'ỹre. Opamba'e ne mba'ekuaarã pirapire rehegua oñeñongatu ne celular-pe añonte, cifrado AES-256 ndive.",
+      desc: "Cifrado AES-256 ndive.",
     },
     languages: {
       title: "5 ñe'ẽ",

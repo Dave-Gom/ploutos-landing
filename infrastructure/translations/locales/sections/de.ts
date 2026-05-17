@@ -38,7 +38,7 @@ const sections: SectionsTranslations = {
     },
     privacy: {
       title: "Totale Privatsphare",
-      desc: "Keine Benutzerkonten, keine Server. Alle deine Finanzdaten werden ausschliesslich auf deinem Gerat gespeichert, verschlusselt mit AES-256.",
+      desc: "Verschlusselt mit AES-256.",
     },
     languages: {
       title: "5 Sprachen",

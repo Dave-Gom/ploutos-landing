@@ -38,7 +38,7 @@ const sections: SectionsTranslations = {
     },
     privacy: {
       title: "Total privacy",
-      desc: "No user accounts, no servers. All your financial data is stored exclusively on your device, encrypted with AES-256.",
+      desc: "Encrypted with AES-256.",
     },
     languages: {
       title: "5 languages",

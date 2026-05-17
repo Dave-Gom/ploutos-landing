@@ -38,7 +38,7 @@ const sections: SectionsTranslations = {
     },
     privacy: {
       title: "Secretum totale",
-      desc: "Sine rationibus usorum, sine servitoribus. Omnia data nummaria tua exclusive in dispositivo tuo servantur, cryptata cum AES-256.",
+      desc: "Cryptata cum AES-256.",
     },
     languages: {
       title: "V linguae",
