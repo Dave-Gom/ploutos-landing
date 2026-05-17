@@ -1,26 +1,112 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Primary */
+  --color-primary: #8BCF9B;
+  --color-primary-deep: #5FB376;
+  --color-primary-soft: #E8F5EC;
+
+  /* Accent */
+  --color-accent: #F7DC6F;
+  --color-accent-soft: #FDF6DC;
+
+  /* Text */
+  --color-text: #1F2933;
+  --color-text-2: #4B5560;
+
+  /* Neutral */
+  --color-neutral: #8A9196;
+
+  /* Hairline */
+  --color-hairline: #E6E9EE;
+
+  /* Backgrounds */
+  --color-bg: #ffffff;
+  --color-bg-2: #F7F9FC;
+  --color-bg-3: #F1F4F9;
+
+  /* Error */
+  --color-danger: #EF4444;
+
+  /* Category icon pastels */
+  --color-cat-green: #C7EAD0;
+  --color-cat-blue: #CFE3F5;
+  --color-cat-purple-soft: #E8E4F7;
+  --color-cat-purple: #D9C8F0;
+  --color-cat-pink: #F7D7DD;
+  --color-cat-yellow: #F6E8B5;
+  --color-cat-orange: #F7D9C0;
+
+  /* Font */
+  --font-body: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Glass Navigation */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: saturate(180%) blur(18px);
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
+}
+
+/* Reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Phone mockup */
+.phone-frame {
+  background: #1f2933;
+  border-radius: 44px;
+  padding: 8px;
+  box-shadow:
+    0 30px 60px -30px rgba(15, 23, 32, 0.25),
+    0 10px 30px -15px rgba(15, 23, 32, 0.12),
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+}
+
+.phone-inner {
+  background: white;
+  border-radius: 36px;
+  overflow: hidden;
+  aspect-ratio: 9 / 19.5;
+}
+
+.phone-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
