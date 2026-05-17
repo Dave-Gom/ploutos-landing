@@ -4,25 +4,45 @@ import type { Locale } from "@/infrastructure/types/locale";
 import type { NavbarTranslations } from "@/infrastructure/types/translations/navigation";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface NavbarProps {
   lang: Locale;
   labels: NavbarTranslations;
 }
 
-const allLocales: Locale[] = ["en", "es", "de", "la", "gn"];
+const languageList: { code: Locale; label: string }[] = [
+  { code: "gn", label: "Avañe'ẽ" },
+  { code: "de", label: "Deutsch" },
+  { code: "en", label: "English" },
+  { code: "es", label: "Español" },
+  { code: "la", label: "Latina" },
+];
 
 const Navbar = ({ lang, labels }: NavbarProps) => {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
+  const langRef = useRef<HTMLDivElement>(null);
+
+  const currentLang = languageList.find((l) => l.code === lang) ?? languageList[3];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const onClickOutside = (e: MouseEvent) => {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setLangOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", onClickOutside);
+    return () => document.removeEventListener("mousedown", onClickOutside);
   }, []);
 
   const navLinks = [
@@ -54,24 +74,49 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
 
         <div className="flex items-center gap-3">
           {/* Language selector */}
-          <div className="flex items-center gap-1">
-            {allLocales.map((l, i) => (
-              <span key={l} className="flex items-center">
-                <Link
-                  href={pathname.replace(`/${lang}`, `/${l}`)}
-                  className="text-xs font-bold uppercase tracking-wider transition-colors hover:text-text"
-                  style={{
-                    color: l === lang ? "#1F2933" : "#8A9196",
-                    fontWeight: l === lang ? 800 : 700,
-                  }}
-                >
-                  {l.toUpperCase()}
-                </Link>
-                {i < allLocales.length - 1 && (
-                  <span className="mx-1 text-xs text-hairline">/</span>
-                )}
-              </span>
-            ))}
+          <div ref={langRef} className="relative">
+            <button
+              onClick={() => setLangOpen(!langOpen)}
+              className="flex items-center gap-1.5 text-[15px] font-semibold text-primary-deep transition-colors hover:text-primary"
+            >
+              {currentLang.label}
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className={`text-neutral transition-transform duration-200 ${langOpen ? "rotate-180" : ""}`}
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+
+            {langOpen && (
+              <div className="absolute right-0 top-full mt-2 min-w-[160px] overflow-hidden rounded-xl bg-white py-1 shadow-[0_4px_16px_rgba(0,0,0,0.12)]">
+                {languageList.map((l, i) => (
+                  <div key={l.code}>
+                    <Link
+                      href={pathname.replace(`/${lang}`, `/${l.code}`)}
+                      onClick={() => setLangOpen(false)}
+                      className={`block px-4 py-2.5 text-[14.5px] transition-colors ${
+                        l.code === lang
+                          ? "font-semibold text-primary-deep"
+                          : "text-text-2 hover:bg-bg-2 hover:text-text"
+                      }`}
+                    >
+                      {l.label}
+                    </Link>
+                    {i < languageList.length - 1 && (
+                      <div className="mx-3 border-t border-hairline" />
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
 
           <a
