@@ -1,8 +1,8 @@
-import { redirect } from "next/navigation";
+import { permanentRedirect } from "next/navigation";
 import { defaultLocale } from "@/infrastructure/translations/dictionaries";
 
 const RootPage = () => {
-  redirect(`/${defaultLocale}`);
+  permanentRedirect(`/${defaultLocale}`);
 };
 
 export default RootPage;

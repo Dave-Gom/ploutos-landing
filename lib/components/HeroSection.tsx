@@ -7,7 +7,7 @@ interface HeroSectionProps {
 
 const HeroSection = ({ t }: HeroSectionProps) => {
   return (
-    <header className="relative overflow-hidden py-20">
+    <section className="relative overflow-hidden py-20">
       <div
         className="pointer-events-none absolute -inset-x-[10%] -top-[10%] -z-10 h-[720px] blur-[20px]"
         style={{
@@ -86,10 +86,10 @@ const HeroSection = ({ t }: HeroSectionProps) => {
               background: "radial-gradient(closest-side, rgba(139, 207, 155, 0.35), transparent 70%)",
             }}
           />
-          <PhoneFrame src="/assets/screenshots/dashboard.png" alt="Ploutos dashboard" width={320} />
+          <PhoneFrame src="/assets/screenshots/dashboard.png" alt="Ploutos dashboard" width={320} priority />
         </div>
       </div>
-    </header>
+    </section>
   );
 };
 

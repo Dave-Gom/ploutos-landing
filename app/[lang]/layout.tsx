@@ -1,14 +1,23 @@
 import type { Locale } from "@/infrastructure/types";
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import {
   getDictionary,
   hasLocale,
   locales,
 } from "../../infrastructure/translations/dictionaries";
+import { SITE_URL } from "@/lib/constants";
 import Navbar from "@/lib/components/Navbar";
 import Footer from "@/lib/components/Footer";
 import RevealObserver from "@/lib/components/RevealObserver";
+import "../globals.css";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const ogLocaleMap: Record<Locale, string> = {
   en: "en_US",
@@ -32,6 +41,7 @@ export const generateMetadata = async ({
   const dict = await getDictionary(locale);
 
   return {
+    metadataBase: new URL(SITE_URL),
     title: dict.metadata.title,
     description: dict.metadata.description,
     keywords: dict.metadata.keywords,
@@ -51,9 +61,11 @@ export const generateMetadata = async ({
       description: dict.metadata.description,
     },
     alternates: {
-      languages: Object.fromEntries(
-        locales.map((l) => [ogLocaleMap[l], `/${l}`]),
-      ),
+      canonical: `/${lang}`,
+      languages: {
+        ...Object.fromEntries(locales.map((l) => [l, `/${l}`])),
+        "x-default": "/es",
+      },
     },
   };
 };
@@ -71,12 +83,14 @@ const LangLayout = async ({
   const dict = await getDictionary(lang as Locale);
 
   return (
-    <>
-      <Navbar lang={lang as Locale} labels={dict.navbar} />
-      <main>{children}</main>
-      <Footer lang={lang as Locale} labels={dict.footer} />
-      <RevealObserver />
-    </>
+    <html lang={lang} className={`${inter.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col bg-bg text-text font-body">
+        <Navbar lang={lang as Locale} labels={dict.navbar} />
+        <main>{children}</main>
+        <Footer lang={lang as Locale} labels={dict.footer} />
+        <RevealObserver />
+      </body>
+    </html>
   );
 };
 

@@ -20,8 +20,31 @@ const Home = async ({
   if (!hasLocale(lang)) notFound();
   const dict = await getDictionary(lang as Locale);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Ploutos",
+    applicationCategory: "FinanceApplication",
+    operatingSystem: "iOS, Android",
+    description: dict.metadata.description,
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    author: {
+      "@type": "Person",
+      name: "David Gomez",
+      url: "https://davegzarca.dev",
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <HeroSection t={dict.hero} />
       <FeaturesSection t={dict.features} />
       <HowItWorksSection t={dict.howItWorks} />

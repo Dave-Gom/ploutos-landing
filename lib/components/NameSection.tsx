@@ -22,12 +22,12 @@ const NameSection = ({ t }: NameSectionProps) => {
           <span className="mb-4 inline-block text-xs font-bold uppercase tracking-[0.16em] text-primary-deep">
             {t.eyebrow}
           </span>
-          <div
+          <h2
             className="mb-6 text-[clamp(56px,9vw,110px)] font-bold leading-none tracking-[-0.02em]"
             style={{ fontFeatureSettings: '"ss01"' }}
           >
             Πλοῦτος
-          </div>
+          </h2>
           <p className="text-[clamp(19px,2vw,22px)] leading-relaxed text-text-2 [text-wrap:pretty]">
             {t.description}
           </p>
