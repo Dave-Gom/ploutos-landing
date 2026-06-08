@@ -2,6 +2,7 @@
 
 import type { Locale } from "@/infrastructure/types/locale";
 import type { NavbarTranslations } from "@/infrastructure/types/translations/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -58,9 +59,14 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
     >
       <div className="mx-auto flex h-16 max-w-[1180px] items-center justify-between px-6">
         <a href="#" className="flex items-center gap-2.5 text-lg font-bold tracking-tight">
-          <span className="grid h-[30px] w-[30px] place-items-center rounded-lg bg-primary text-[16px] font-extrabold text-[#1c3a26]">
-            π
-          </span>
+          <Image
+            src="/assets/logo.png"
+            alt="Ploutos"
+            width={30}
+            height={30}
+            priority
+            className="rounded-lg bg-primary"
+          />
           Ploutos
         </a>
 

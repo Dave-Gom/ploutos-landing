@@ -1,5 +1,6 @@
 import type { Locale } from "@/infrastructure/types/locale";
 import type { FooterTranslations } from "@/infrastructure/types/translations/common";
+import Image from "next/image";
 
 interface FooterProps {
   lang: Locale;
@@ -13,9 +14,13 @@ const Footer = ({ labels }: FooterProps) => {
         <div className="grid grid-cols-1 gap-7 border-b border-white/[0.08] pb-9 sm:grid-cols-[1.4fr_1fr_1fr] sm:gap-10">
           <div>
             <div className="mb-3 flex items-center gap-2.5 text-lg font-bold text-white">
-              <span className="grid h-[30px] w-[30px] place-items-center rounded-lg bg-primary text-[16px] font-extrabold text-[#1c3a26]">
-                π
-              </span>
+              <Image
+                src="/assets/logo.png"
+                alt="Ploutos"
+                width={30}
+                height={30}
+                className="rounded-lg bg-primary"
+              />
               Ploutos
             </div>
             <p className="max-w-[360px] text-sm leading-relaxed">{labels.blurb}</p>
