@@ -6,7 +6,7 @@ const sections: SectionsTranslations = {
     title: "Ploutos",
     tagline: "Eikuaa ha emohenda ne pirapire hesa'ype.",
     subtitle:
-      "Peteĩ app pirapire rehegua ndive ñembotavy'ỹ. Cuenta'ỹre, arai'ỹre, mba'asy'ỹre. Ne mba'ekuaarã, ne celular-pe añonte.",
+      "Peteĩ app pirapire rehegua hasýi'ỹre. Cuenta'ỹre, arai'ỹre, mba'asy'ỹre. Ne mba'ekuaarã, nde celular-pe añonte.",
     appStoreLabel: "Emboguejy",
     appStoreName: "App Store",
     playStoreLabel: "Erekó",
@@ -47,7 +47,7 @@ const sections: SectionsTranslations = {
   },
   howItWorks: {
     eyebrow: "Upeicha ndahasýi",
-    title: "Mbohapy paso. Cero ñembotavy.",
+    title: "Mbohapy paso. Hasýi'ỹ.",
     subtitle:
       "App eipejy guive kóga peve eikuaa mamo oho ne pirapire.",
     step1: {
@@ -82,7 +82,7 @@ const sections: SectionsTranslations = {
     title: "Peteĩ proyecto independiente.",
     name: "David",
     nameLast: "Gomez",
-    bio: "Desarrollador software oñeñamindu'úva experiencia movil limpia ha funcional rehe. Ploutos oiko necesidad personal gui: peteĩ app pirapire rehegua ofuncionáva, ñembotavy'ỹre ha complejidad innecesaria'ỹre.",
+    bio: "Desarrollador software oñeñamindu'úva experiencia movil limpia ha funcional rehe. Ploutos oiko necesidad personal gui: peteĩ app pirapire rehegua ofuncionáva, hasýi'ỹre ha complejidad innecesaria'ỹre.",
     visitPortfolio: "Evisitá portfolio",
   },
 };

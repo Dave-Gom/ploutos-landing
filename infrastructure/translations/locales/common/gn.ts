@@ -4,13 +4,13 @@ const common: CommonTranslations = {
   metadata: {
     title: "Ploutos — Eikuaa ha emohenda ne pirapire hesa'ype",
     description:
-      "Peteĩ app pirapire rehegua ndive ñembotavy'ỹ. Cuenta'ỹre, arai'ỹre, mba'asy'ỹre. Ne mba'ekuaarã, ne celular-pe añonte.",
+      "Peteĩ app pirapire rehegua hasýi'ỹre. Cuenta'ỹre, arai'ỹre, mba'asy'ỹre. Ne mba'ekuaarã, nde celular-pe añonte.",
     keywords:
       "pirapire personal, app, iOS, Android, presupuesto, gasto, jehupyty, offline, ñemigua",
   },
   footer: {
     blurb:
-      "Peteĩ app pirapire rehegua eikuaa ha emboguata haguã ne pirapire hesa'ype. Arai'ỹre, cuenta'ỹre. Ne mba'ekuaarã, ne celular-pe.",
+      "Peteĩ app pirapire rehegua eikuaa ha emboguata haguã ne pirapire hesa'ype. Arai'ỹre, cuenta'ỹre. Ne mba'ekuaarã, nde celular-pe.",
     appTitle: "App",
     features: "Mba'e ikatu",
     howItWorks: "Mba'eicha ofuncioná",
