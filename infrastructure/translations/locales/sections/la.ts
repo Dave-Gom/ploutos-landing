@@ -42,7 +42,7 @@ const sections: SectionsTranslations = {
     },
     languages: {
       title: "V linguae",
-      desc: "Praesto in Anglica, Hispanica, Germanica, Avane'e (Guaranitica) et Latina (Latina Classica).",
+      desc: "Praesto in Anglica, Hispanica, Germanica, Avañe'ẽ (Guaranitica) et Latina (Latina Classica).",
     },
   },
   howItWorks: {

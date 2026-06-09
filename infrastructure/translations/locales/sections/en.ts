@@ -42,7 +42,7 @@ const sections: SectionsTranslations = {
     },
     languages: {
       title: "5 languages",
-      desc: "Available in English, Spanish, German, Avane'e (Guarani) and Latin (Classical Latin).",
+      desc: "Available in English, Spanish, German, Avañe'ẽ (Guaraní) and Latin (Classical Latin).",
     },
   },
   howItWorks: {

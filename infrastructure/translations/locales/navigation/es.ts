@@ -3,7 +3,7 @@ import type { NavigationTranslations } from "@/infrastructure/types/translations
 const navigation: NavigationTranslations = {
   navbar: {
     features: "Funciones",
-    howItWorks: "Como funciona",
+    howItWorks: "Cómo funciona",
     theName: "El nombre",
     creator: "Creador",
     download: "Descargar",

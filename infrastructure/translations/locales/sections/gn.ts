@@ -42,7 +42,7 @@ const sections: SectionsTranslations = {
     },
     languages: {
       title: "5 ñe'ẽ",
-      desc: "Oĩ English, Español, Deutsch, Avañe'ẽ ha Latina (Latin clasico) pe.",
+      desc: "Oĩ English, Español, Deutsch, Avañe'ẽ ha Latina (Latín clásico) pe.",
     },
   },
   howItWorks: {

@@ -6,7 +6,7 @@ const sections: SectionsTranslations = {
     title: "Ploutos",
     tagline: "Entiende y organiza tu dinero con claridad.",
     subtitle:
-      "Una app de finanzas personales sin friccion. Sin cuentas, sin nubes, sin complicaciones. Tus datos, solo en tu dispositivo.",
+      "Una app de finanzas personales sin fricción. Sin cuentas, sin nubes, sin complicaciones. Tus datos, solo en tu dispositivo.",
     appStoreLabel: "Descargar en",
     appStoreName: "App Store",
     playStoreLabel: "Disponible en",
@@ -17,24 +17,24 @@ const sections: SectionsTranslations = {
   },
   features: {
     eyebrow: "Funciones",
-    title: "Que puedes hacer con Ploutos?",
+    title: "¿Qué puedes hacer con Ploutos?",
     subtitle:
       "Todo lo que necesitas para registrar, organizar y entender tu dinero. Nada que no necesites.",
     accounts: {
-      title: "Multiples cuentas",
+      title: "Múltiples cuentas",
       desc: "Crea cuentas con iconos, colores y monedas diferentes. Visualiza el balance de cada una al instante.",
     },
     transactions: {
       title: "Ingresos, gastos y transferencias",
-      desc: "Registra cualquier movimiento financiero con categorias, notas y fechas. Todo organizado automaticamente.",
+      desc: "Registra cualquier movimiento financiero con categorías, notas y fechas. Todo organizado automáticamente.",
     },
     statistics: {
-      title: "Estadisticas detalladas",
-      desc: "4 tipos de graficas interactivas: gastos e ingresos por categoria y por cuenta. Filtra por fecha, cuenta o categoria.",
+      title: "Estadísticas detalladas",
+      desc: "4 tipos de gráficas interactivas: gastos e ingresos por categoría y por cuenta. Filtra por fecha, cuenta o categoría.",
     },
     multiCurrency: {
       title: "Multi-moneda",
-      desc: "Soporta 20+ monedas incluyendo USD, EUR, MXN, ARS, PYG, BRL y mas. Tasas de cambio actualizadas diariamente.",
+      desc: "Soporta 20+ monedas incluyendo USD, EUR, MXN, ARS, PYG, BRL y más. Tasas de cambio actualizadas diariamente.",
     },
     privacy: {
       title: "Privacidad total",
@@ -42,47 +42,47 @@ const sections: SectionsTranslations = {
     },
     languages: {
       title: "5 idiomas",
-      desc: "Disponible en English, Espanol, Deutsch, Avane'e (Guarani) y Latina (Latin clasico).",
+      desc: "Disponible en English, Español, Deutsch, Avañe'ẽ (Guaraní) y Latina (Latín clásico).",
     },
   },
   howItWorks: {
-    eyebrow: "Asi de simple",
-    title: "Tres pasos. Cero friccion.",
+    eyebrow: "Así de simple",
+    title: "Tres pasos. Cero fricción.",
     subtitle:
-      "Desde que abris la app hasta que entendes a donde va tu dinero.",
+      "Desde que abrís la app hasta que entendés adónde va tu dinero.",
     step1: {
       title: "Crea tus cuentas",
       desc: "Agrega tus cuentas bancarias, billeteras o efectivo con la moneda que uses.",
     },
     step2: {
       title: "Registra tus movimientos",
-      desc: "Ingresos, gastos o transferencias. Con categorias y notas opcionales.",
+      desc: "Ingresos, gastos o transferencias. Con categorías y notas opcionales.",
     },
     step3: {
       title: "Visualiza tu panorama",
-      desc: "Graficas, resumenes mensuales y comparaciones. Entiende a donde va tu dinero.",
+      desc: "Gráficas, resúmenes mensuales y comparaciones. Entendé adónde va tu dinero.",
     },
   },
   showcase: {
     eyebrow: "La app por dentro",
-    title: "Disenada para que veas todo de un vistazo.",
+    title: "Diseñada para que veas todo de un vistazo.",
     subtitle:
-      "Una interfaz pensada para que cada grafico, cuenta y categoria tenga su lugar.",
+      "Una interfaz pensada para que cada gráfico, cuenta y categoría tenga su lugar.",
     altTransactions: "Pantalla de transacciones",
-    altStatistics: "Pantalla de estadisticas",
+    altStatistics: "Pantalla de estadísticas",
     altAccounts: "Pantalla de cuentas",
   },
   name: {
-    eyebrow: "Por que Ploutos?",
+    eyebrow: "¿Por qué Ploutos?",
     description:
-      "En la mitologia griega, Ploutos era la personificacion de la riqueza obtenida a traves del trabajo honesto. Un guardian silencioso de tus finanzas.",
+      "En la mitología griega, Ploutos era la personificación de la riqueza obtenida a través del trabajo honesto. Un guardián silencioso de tus finanzas.",
   },
   developer: {
     eyebrow: "Creado por",
     title: "Un proyecto independiente.",
     name: "David",
     nameLast: "Gomez",
-    bio: "Desarrollador de software enfocado en experiencias moviles limpias y funcionales. Ploutos nacio de una necesidad personal: una app de finanzas que simplemente funcione, sin friccion ni complejidad innecesaria.",
+    bio: "Desarrollador de software enfocado en experiencias móviles limpias y funcionales. Ploutos nació de una necesidad personal: una app de finanzas que simplemente funcione, sin fricción ni complejidad innecesaria.",
     visitPortfolio: "Visitar portfolio",
   },
 };

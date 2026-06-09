@@ -4,13 +4,13 @@ const common: CommonTranslations = {
   metadata: {
     title: "Ploutos — Verstehe und organisiere dein Geld mit Klarheit",
     description:
-      "Eine reibungslose App fur personliche Finanzen. Keine Konten, keine Clouds, keine Komplikationen. Deine Daten, nur auf deinem Gerat.",
+      "Eine reibungslose App für persönliche Finanzen. Keine Konten, keine Clouds, keine Komplikationen. Deine Daten, nur auf deinem Gerät.",
     keywords:
-      "personliche Finanzen, App, iOS, Android, Budget, Ausgaben, Einnahmen, Multi-Wahrung, Offline, Datenschutz",
+      "persönliche Finanzen, App, iOS, Android, Budget, Ausgaben, Einnahmen, Multi-Währung, Offline, Datenschutz",
   },
   footer: {
     blurb:
-      "Eine App fur personliche Finanzen, um dein Geld klar zu verstehen und zu verwalten. Keine Clouds, keine Konten. Deine Daten, auf deinem Gerat.",
+      "Eine App für persönliche Finanzen, um dein Geld klar zu verstehen und zu verwalten. Keine Clouds, keine Konten. Deine Daten, auf deinem Gerät.",
     appTitle: "App",
     features: "Funktionen",
     howItWorks: "So funktioniert's",
