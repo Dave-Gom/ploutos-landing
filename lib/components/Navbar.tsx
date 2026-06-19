@@ -27,7 +27,8 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
   const [langOpen, setLangOpen] = useState(false);
   const langRef = useRef<HTMLDivElement>(null);
 
-  const currentLang = languageList.find((l) => l.code === lang) ?? languageList[3];
+  const currentLang =
+    languageList.find((l) => l.code === lang) ?? languageList[3];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -58,21 +59,28 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
       className={`glass-nav sticky top-0 z-50 border-b transition-colors duration-200 ${scrolled ? "border-hairline" : "border-transparent"}`}
     >
       <div className="mx-auto flex h-16 max-w-[1180px] items-center justify-between px-6">
-        <a href="#" className="flex items-center gap-2.5 text-lg font-bold tracking-tight">
+        <a
+          href="#"
+          className="flex items-center gap-2.5 text-lg font-bold tracking-tight"
+        >
           <Image
             src="/assets/logo.png"
             alt="Ploutos"
-            width={30}
-            height={30}
+            width={35}
+            height={35}
             priority
-            className="rounded-lg bg-primary"
+            className="rounded-lg bg-primary p-1"
           />
           Ploutos
         </a>
 
         <div className="hidden items-center gap-7 md:flex">
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href} className="text-[14.5px] font-medium text-text-2 transition-colors hover:text-text">
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-[14.5px] font-medium text-text-2 transition-colors hover:text-text"
+            >
               {link.label}
             </a>
           ))}
@@ -130,7 +138,16 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
             className="hidden items-center gap-2 rounded-full bg-text px-4 py-2.5 text-sm font-semibold text-white transition-all hover:-translate-y-px hover:bg-[#2A3744] md:inline-flex"
           >
             {labels.download}
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
               <path d="M12 5v14M19 12l-7 7-7-7" />
             </svg>
           </a>
@@ -141,7 +158,15 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Menu"
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+            >
               {menuOpen ? (
                 <path d="M18 6L6 18M6 6l12 12" />
               ) : (
@@ -157,7 +182,12 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
         <div className="border-t border-hairline bg-white px-6 pb-6 pt-4 md:hidden">
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (
-              <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="text-[15px] font-medium text-text-2">
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+                className="text-[15px] font-medium text-text-2"
+              >
                 {link.label}
               </a>
             ))}
@@ -167,7 +197,16 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-text px-4 py-2.5 text-sm font-semibold text-white"
             >
               {labels.download}
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
                 <path d="M12 5v14M19 12l-7 7-7-7" />
               </svg>
             </a>
