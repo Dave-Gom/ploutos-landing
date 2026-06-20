@@ -1,11 +1,13 @@
+import type { Locale } from "@/infrastructure/types";
 import type { HeroTranslations } from "@/infrastructure/types/translations/sections";
 import PhoneFrame from "./PhoneFrame";
 
 interface HeroSectionProps {
+  lang: Locale;
   t: HeroTranslations;
 }
 
-const HeroSection = ({ t }: HeroSectionProps) => {
+const HeroSection = ({ lang, t }: HeroSectionProps) => {
   return (
     <section className="relative overflow-hidden py-20">
       <div
@@ -86,7 +88,7 @@ const HeroSection = ({ t }: HeroSectionProps) => {
               background: "radial-gradient(closest-side, rgba(139, 207, 155, 0.35), transparent 70%)",
             }}
           />
-          <PhoneFrame src="/assets/screenshots/dashboard.png" alt="Ploutos dashboard" width={320} priority />
+          <PhoneFrame src={`/assets/screenshots/${lang}/dashboard.png`} alt="Ploutos dashboard" width={320} priority />
         </div>
       </div>
     </section>

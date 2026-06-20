@@ -1,11 +1,13 @@
+import type { Locale } from "@/infrastructure/types";
 import type { ShowcaseTranslations } from "@/infrastructure/types/translations/sections";
 import PhoneFrame from "./PhoneFrame";
 
 interface ShowcaseSectionProps {
+  lang: Locale;
   t: ShowcaseTranslations;
 }
 
-const ShowcaseSection = ({ t }: ShowcaseSectionProps) => {
+const ShowcaseSection = ({ lang, t }: ShowcaseSectionProps) => {
   return (
     <section className="overflow-hidden bg-gradient-to-b from-bg-2 to-white py-24">
       <div className="mx-auto max-w-[1180px] px-6">
@@ -21,19 +23,19 @@ const ShowcaseSection = ({ t }: ShowcaseSectionProps) => {
 
         <div className="flex min-h-[640px] flex-col items-center justify-center gap-7 pt-5 md:flex-row md:gap-8">
           <PhoneFrame
-            src="/assets/screenshots/transactions.png"
+            src={`/assets/screenshots/${lang}/transactions.png`}
             alt={t.altTransactions}
             width={270}
             className="reveal md:-rotate-6 md:translate-y-5"
           />
           <PhoneFrame
-            src="/assets/screenshots/statistics.png"
+            src={`/assets/screenshots/${lang}/statistics.png`}
             alt={t.altStatistics}
             width={270}
             className="reveal z-10"
           />
           <PhoneFrame
-            src="/assets/screenshots/accounts.png"
+            src={`/assets/screenshots/${lang}/accounts.png`}
             alt={t.altAccounts}
             width={270}
             className="reveal md:rotate-6 md:translate-y-5"

@@ -45,10 +45,10 @@ const Home = async ({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <HeroSection t={dict.hero} />
+      <HeroSection lang={lang as Locale} t={dict.hero} />
       <FeaturesSection t={dict.features} />
       <HowItWorksSection t={dict.howItWorks} />
-      <ShowcaseSection t={dict.showcase} />
+      <ShowcaseSection lang={lang as Locale} t={dict.showcase} />
       <NameSection t={dict.name} />
       <DeveloperSection t={dict.developer} />
     </>
