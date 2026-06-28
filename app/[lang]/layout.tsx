@@ -45,9 +45,28 @@ export const generateMetadata = async ({
     title: dict.metadata.title,
     description: dict.metadata.description,
     keywords: dict.metadata.keywords,
+    applicationName: "Ploutos",
     authors: [{ name: "David Gomez", url: "https://davegzarca.dev" }],
+    creator: "David Gomez",
+    publisher: "David Gomez",
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    icons: {
+      apple: "/assets/logo.png",
+    },
     openGraph: {
       type: "website",
+      url: `${SITE_URL}/${locale}`,
+      siteName: "Ploutos",
       locale: ogLocaleMap[locale],
       alternateLocale: locales
         .filter((l) => l !== locale)
@@ -59,6 +78,7 @@ export const generateMetadata = async ({
       card: "summary_large_image",
       title: dict.metadata.title,
       description: dict.metadata.description,
+      images: [`${SITE_URL}/${locale}/opengraph-image`],
     },
     alternates: {
       canonical: `/${lang}`,

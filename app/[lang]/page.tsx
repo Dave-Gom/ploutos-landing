@@ -4,6 +4,7 @@ import {
   getDictionary,
   hasLocale,
 } from "../../infrastructure/translations/dictionaries";
+import { SITE_URL } from "@/lib/constants";
 import HeroSection from "@/lib/components/HeroSection";
 import FeaturesSection from "@/lib/components/FeaturesSection";
 import HowItWorksSection from "@/lib/components/HowItWorksSection";
@@ -24,9 +25,16 @@ const Home = async ({
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: "Ploutos",
+    url: `${SITE_URL}/${lang}`,
+    inLanguage: lang,
     applicationCategory: "FinanceApplication",
     operatingSystem: "iOS, Android",
     description: dict.metadata.description,
+    screenshot: [
+      `${SITE_URL}/assets/screenshots/${lang}/dashboard.png`,
+      `${SITE_URL}/assets/screenshots/${lang}/transactions.png`,
+      `${SITE_URL}/assets/screenshots/${lang}/statistics.png`,
+    ],
     offers: {
       "@type": "Offer",
       price: "0",
