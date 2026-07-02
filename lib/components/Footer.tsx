@@ -101,7 +101,8 @@ const Footer = ({ labels }: FooterProps) => {
               </svg>
             </a>
             <a
-              href="#"
+              target="_blank"
+              href="https://play.google.com/store/apps/details?id=dev.davegzarca.ploutos"
               aria-label="Google Play"
               className="grid h-9 w-9 place-items-center rounded-[10px] bg-white/[0.06] text-white transition-colors hover:bg-white/[0.12]"
             >

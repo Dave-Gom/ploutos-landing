@@ -12,6 +12,10 @@ interface NavbarProps {
   labels: NavbarTranslations;
 }
 
+const IOS_URL = "https://apps.apple.com/"; // TODO: reemplazar con la URL real de App Store
+const ANDROID_URL =
+  "https://play.google.com/store/apps/details?id=dev.davegzarca.ploutos";
+
 const languageList: { code: Locale; label: string }[] = [
   { code: "gn", label: "Avañe'ẽ" },
   { code: "de", label: "Deutsch" },
@@ -46,6 +50,13 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
     document.addEventListener("mousedown", onClickOutside);
     return () => document.removeEventListener("mousedown", onClickOutside);
   }, []);
+
+  const handleDownload = () => {
+    const isIOS =
+      /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+      (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    window.open(isIOS ? IOS_URL : ANDROID_URL, "_blank", "noopener,noreferrer");
+  };
 
   const navLinks = [
     { href: "#features", label: labels.features },
@@ -133,8 +144,8 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
             )}
           </div>
 
-          <a
-            href="#download"
+          <button
+            onClick={handleDownload}
             className="hidden items-center gap-2 rounded-full bg-text px-4 py-2.5 text-sm font-semibold text-white transition-all hover:-translate-y-px hover:bg-[#2A3744] md:inline-flex"
           >
             {labels.download}
@@ -150,7 +161,7 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
             >
               <path d="M12 5v14M19 12l-7 7-7-7" />
             </svg>
-          </a>
+          </button>
 
           {/* Mobile menu button */}
           <button
@@ -191,9 +202,8 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
                 {link.label}
               </a>
             ))}
-            <a
-              href="#download"
-              onClick={() => setMenuOpen(false)}
+            <button
+              onClick={() => { setMenuOpen(false); handleDownload(); }}
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-text px-4 py-2.5 text-sm font-semibold text-white"
             >
               {labels.download}
@@ -209,7 +219,7 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
               >
                 <path d="M12 5v14M19 12l-7 7-7-7" />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
       )}
