@@ -71,14 +71,6 @@ const Footer = ({ labels }: FooterProps) => {
               </li>
               <li>
                 <a
-                  href="mailto:privacy@davegzarca.dev"
-                  className="transition-colors hover:text-white"
-                >
-                  privacy@davegzarca.dev
-                </a>
-              </li>
-              <li>
-                <a
                   href="https://davegzarca.dev/"
                   target="_blank"
                   rel="noopener noreferrer"
