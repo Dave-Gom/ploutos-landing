@@ -19,7 +19,7 @@ const sections: SectionsTranslations = {
     eyebrow: "Funktionen",
     title: "Was kannst du mit Ploutos machen?",
     subtitle:
-      "Alles, was du brauchst, um dein Geld zu erfassen, zu organisieren und zu verstehen. Nichts, was du nicht brauchst.",
+      "Alles, was du brauchst, um dein Geld zu erfassen, zu organisieren und zu verstehen.",
     accounts: {
       title: "Mehrere Konten",
       desc: "Erstelle Konten mit verschiedenen Symbolen, Farben und Währungen. Sieh den Saldo jedes Kontos auf einen Blick.",
@@ -48,8 +48,7 @@ const sections: SectionsTranslations = {
   howItWorks: {
     eyebrow: "So einfach",
     title: "Drei Schritte. Null Reibung.",
-    subtitle:
-      "Vom Öffnen der App bis zum Verständnis, wohin dein Geld fließt.",
+    subtitle: "Vom Öffnen der App bis zum Verständnis, wohin dein Geld fließt.",
     step1: {
       title: "Erstelle deine Konten",
       desc: "Füge deine Bankkonten, Geldbeutel oder Bargeld mit der Währung hinzu, die du verwendest.",

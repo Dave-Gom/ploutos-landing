@@ -19,7 +19,7 @@ const sections: SectionsTranslations = {
     eyebrow: "Functiones",
     title: "Quid cum Plouto facere potes?",
     subtitle:
-      "Omnia quae necessaria sunt ad pecuniam tuam notandam, ordinandam et intellegendam. Nihil quod non necessarium est.",
+      "Omnia quae necessaria sunt ad pecuniam tuam notandam, ordinandam et intellegendam.",
     accounts: {
       title: "Rationes multiplices",
       desc: "Crea rationes cum diversis signis, coloribus et monetis. Vide saldos singularum statim.",

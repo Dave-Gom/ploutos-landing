@@ -19,7 +19,7 @@ const sections: SectionsTranslations = {
     eyebrow: "Features",
     title: "What can you do with Ploutos?",
     subtitle:
-      "Everything you need to record, organize and understand your money. Nothing you don't.",
+      "Everything you need to record, organize and understand your money.",
     accounts: {
       title: "Multiple accounts",
       desc: "Create accounts with different icons, colors and currencies. See each balance at a glance.",

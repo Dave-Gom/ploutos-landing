@@ -18,8 +18,7 @@ const sections: SectionsTranslations = {
   features: {
     eyebrow: "Mba'e ikatu",
     title: "Mba'e ikatu ejapo Ploutos ndive?",
-    subtitle:
-      "Opamba'e eikotevẽva ehai, emohenda ha eikuaa haguã ne pirapire. Mba'eve eikotevẽ'ỹva.",
+    subtitle: "Opamba'e eikotevẽva ehai, emohenda ha eikuaa haguã ne pirapire",
     accounts: {
       title: "Cuenta heta",
       desc: "Emoheñói cuenta ta'anga, sa'y ha moneda iñambuéva ndive. Ehecha peteĩteĩ balance pya'e.",
@@ -48,8 +47,7 @@ const sections: SectionsTranslations = {
   howItWorks: {
     eyebrow: "Upeicha ndahasýi",
     title: "Mbohapy paso. Hasýi'ỹ.",
-    subtitle:
-      "App eipejy guive kóga peve eikuaa mamo oho ne pirapire.",
+    subtitle: "App eipejy guive kóga peve eikuaa mamo oho ne pirapire.",
     step1: {
       title: "Emoheñói ne cuenta",
       desc: "Embojuaju ne cuenta banco pegua, billetera ha pirapire moneda eiporúva ndive.",

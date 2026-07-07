@@ -19,7 +19,7 @@ const sections: SectionsTranslations = {
     eyebrow: "Funciones",
     title: "¿Qué puedes hacer con Ploutos?",
     subtitle:
-      "Todo lo que necesitas para registrar, organizar y entender tu dinero. Nada que no necesites.",
+      "Todo lo que necesitas para registrar, organizar y entender tu dinero.",
     accounts: {
       title: "Múltiples cuentas",
       desc: "Crea cuentas con iconos, colores y monedas diferentes. Visualiza el balance de cada una al instante.",
@@ -48,8 +48,7 @@ const sections: SectionsTranslations = {
   howItWorks: {
     eyebrow: "Así de simple",
     title: "Tres pasos. Cero fricción.",
-    subtitle:
-      "Desde que abrís la app hasta que entendés adónde va tu dinero.",
+    subtitle: "Desde que abrís la app hasta que entendés adónde va tu dinero.",
     step1: {
       title: "Crea tus cuentas",
       desc: "Agrega tus cuentas bancarias, billeteras o efectivo con la moneda que uses.",
