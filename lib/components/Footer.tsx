@@ -87,7 +87,9 @@ const Footer = ({ labels }: FooterProps) => {
           <div>{labels.copyright}</div>
           <div className="flex gap-2.5">
             <a
-              href="#"
+              href="https://apps.apple.com/py/app/ploutos-expense-tracker/id6775302616"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="App Store"
               className="grid h-9 w-9 place-items-center rounded-[10px] bg-white/[0.06] text-white transition-colors hover:bg-white/[0.12]"
             >

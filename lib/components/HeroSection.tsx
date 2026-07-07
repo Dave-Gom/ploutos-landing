@@ -43,7 +43,8 @@ const HeroSection = ({ lang, t }: HeroSectionProps) => {
 
           <div className="flex flex-wrap gap-3" id="download">
             <a
-              href="#"
+              target="_blank"
+              href="https://apps.apple.com/py/app/ploutos-expense-tracker/id6775302616"
               className="inline-flex items-center gap-3 rounded-[14px] bg-text py-3 pl-4 pr-5 font-semibold text-white shadow-sm transition-all hover:-translate-y-0.5 hover:bg-[#0e1620] hover:shadow-md"
             >
               <svg className="h-7 w-7" viewBox="0 0 24 24" fill="currentColor">

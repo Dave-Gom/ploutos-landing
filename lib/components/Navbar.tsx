@@ -12,7 +12,8 @@ interface NavbarProps {
   labels: NavbarTranslations;
 }
 
-const IOS_URL = "https://apps.apple.com/"; // TODO: reemplazar con la URL real de App Store
+const IOS_URL =
+  "https://apps.apple.com/py/app/ploutos-expense-tracker/id6775302616"; // TODO: reemplazar con la URL real de App Store
 const ANDROID_URL =
   "https://play.google.com/store/apps/details?id=dev.davegzarca.ploutos";
 
@@ -203,7 +204,10 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
               </a>
             ))}
             <button
-              onClick={() => { setMenuOpen(false); handleDownload(); }}
+              onClick={() => {
+                setMenuOpen(false);
+                handleDownload();
+              }}
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-text px-4 py-2.5 text-sm font-semibold text-white"
             >
               {labels.download}
