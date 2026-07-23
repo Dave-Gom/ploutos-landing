@@ -60,10 +60,10 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
   };
 
   const navLinks = [
-    { href: "#features", label: labels.features },
-    { href: "#how", label: labels.howItWorks },
-    { href: "#about", label: labels.theName },
-    { href: "#developer", label: labels.creator },
+    { href: `/${lang}#features`, label: labels.features },
+    { href: `/${lang}#how`, label: labels.howItWorks },
+    { href: `/${lang}#about`, label: labels.theName },
+    { href: `/${lang}#developer`, label: labels.creator },
   ];
 
   return (
@@ -72,7 +72,7 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
     >
       <div className="mx-auto flex h-16 max-w-[1180px] items-center justify-between px-6">
         <a
-          href="#"
+          href={`/${lang}`}
           className="flex items-center gap-2.5 text-lg font-bold tracking-tight"
         >
           <Image
