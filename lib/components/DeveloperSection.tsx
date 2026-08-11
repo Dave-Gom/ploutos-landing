@@ -62,7 +62,7 @@ const DeveloperSection = ({ t }: DeveloperSectionProps) => {
                 </svg>
               </a>
               <a
-                href="https://github.com/davegomez"
+                href="https://github.com/Dave-Gom"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-hairline bg-white px-[18px] py-3 text-[14.5px] font-semibold transition-all hover:-translate-y-0.5 hover:border-text-2"
