@@ -32,6 +32,14 @@ const sections: SectionsTranslations = {
       title: "Statisticae accuratae",
       desc: "IV genera diagrammatum: sumptus et reditus per categoriam et per rationem. Filtra per diem, rationem aut categoriam.",
     },
+    savings: {
+      title: "Proposita servandi",
+      desc: "Crea proposita cum die ultimo ad libitum et summa destinata, pecuniam ex rationibus tuis depone et progressum tuum cum propositis menstruis observa.",
+    },
+    budgets: {
+      title: "Rationes sumptuum",
+      desc: "Constitue limites sumptuum categoriis quas elegeris, cum conspectu menstruo, hebdomadali et diurno. Limites medio cyclo reputa cum aliquid mutatur.",
+    },
     multiCurrency: {
       title: "Multi-moneta",
       desc: "Sustinet XX+ monetas includens USD, EUR, MXN, ARS, PYG, BRL et alias. Cursus commutationis cotidie renovati.",
@@ -43,6 +51,10 @@ const sections: SectionsTranslations = {
     languages: {
       title: "V linguae",
       desc: "Praesto in Anglica, Hispanica, Germanica, Avañe'ẽ (Guaranitica) et Latina (Latina Classica).",
+    },
+    ads: {
+      title: "Gratuita, cum praeconiis modestis",
+      desc: "Omnes functiones gratuitae sunt, praeconiis sustentatae: haec in indices apte se inserunt, et quae totam paginam implent, singulis minutis semel ad summum apparent.",
     },
   },
   howItWorks: {
@@ -67,8 +79,7 @@ const sections: SectionsTranslations = {
     eyebrow: "Applicatio intus",
     title: "Designata ut omnia uno obtutu videas.",
     subtitle:
-      "Interfacies cogitata ut quodque diagramma, ratio et categoria locum suum habeat.",
-    altTransactions: "Pagina transactionum",
+      "Interfacies cogitata ut quaeque ratio, propositum, ratio sumptuum et diagramma locum suum habeat.",
     altStatistics: "Pagina statisticarum",
     altAccounts: "Pagina rationum",
   },

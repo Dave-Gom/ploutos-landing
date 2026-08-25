@@ -32,6 +32,14 @@ const sections: SectionsTranslations = {
       title: "Detaillierte Statistiken",
       desc: "4 Arten interaktiver Diagramme: Ausgaben und Einnahmen nach Kategorie und Konto. Filtere nach Datum, Konto oder Kategorie.",
     },
+    savings: {
+      title: "Sparziele",
+      desc: "Erstelle Ziele mit Zielbetrag und optionaler Frist, zahle von deinen Konten ein und verfolge deinen Fortschritt mit Monatszielen und motivierenden Nachrichten.",
+    },
+    budgets: {
+      title: "Budgets",
+      desc: "Setze Ausgabenlimits für ausgewählte Kategorien mit Monats-, Wochen- und Tagesansicht. Berechne deine Limits mitten im Zyklus neu, wenn sich etwas ändert.",
+    },
     multiCurrency: {
       title: "Multi-Währung",
       desc: "Unterstützt 20+ Währungen einschließlich USD, EUR, MXN, ARS, PYG, BRL und mehr. Wechselkurse täglich aktualisiert.",
@@ -43,6 +51,10 @@ const sections: SectionsTranslations = {
     languages: {
       title: "5 Sprachen",
       desc: "Verfügbar in Englisch, Spanisch, Deutsch, Avañe'ẽ (Guaraní) und Latein (Klassisches Latein).",
+    },
+    ads: {
+      title: "Kostenlos, mit dezenter Werbung",
+      desc: "Alle Funktionen sind kostenlos, dank Werbung: In Listen fügt sie sich in den Inhalt ein, und Vollbildanzeigen erscheinen höchstens einmal pro Minute.",
     },
   },
   howItWorks: {
@@ -66,8 +78,7 @@ const sections: SectionsTranslations = {
     eyebrow: "Die App von innen",
     title: "Gestaltet, damit du alles auf einen Blick siehst.",
     subtitle:
-      "Eine Oberfläche, in der jedes Diagramm, Konto und jede Kategorie ihren Platz hat.",
-    altTransactions: "Transaktionsbildschirm",
+      "Eine Oberfläche, in der jedes Sparziel, Budget, Diagramm und Konto seinen Platz hat.",
     altStatistics: "Statistikbildschirm",
     altAccounts: "Kontenbildschirm",
   },

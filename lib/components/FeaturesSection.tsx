@@ -5,7 +5,7 @@ interface FeaturesSectionProps {
 }
 
 const featureConfig: {
-  key: keyof Pick<FeaturesTranslations, "accounts" | "transactions" | "statistics" | "multiCurrency" | "privacy" | "languages">;
+  key: keyof Pick<FeaturesTranslations, "accounts" | "transactions" | "statistics" | "savings" | "budgets" | "multiCurrency" | "privacy" | "languages" | "ads">;
   icon: React.ReactNode;
   bg: string;
   color: string;
@@ -43,6 +43,26 @@ const featureConfig: {
     ),
   },
   {
+    key: "savings",
+    bg: "bg-primary-soft",
+    color: "text-[#3f7d54]",
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="5" /><circle cx="12" cy="12" r="1" fill="currentColor" />
+      </svg>
+    ),
+  },
+  {
+    key: "budgets",
+    bg: "bg-cat-orange",
+    color: "text-[#a2643c]",
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3.34 19a10 10 0 1 1 17.32 0" /><path d="M12 14l4-4" />
+      </svg>
+    ),
+  },
+  {
     key: "multiCurrency",
     bg: "bg-accent-soft",
     color: "text-[#a0822b]",
@@ -69,6 +89,16 @@ const featureConfig: {
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" /><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20" />
+      </svg>
+    ),
+  },
+  {
+    key: "ads",
+    bg: "bg-cat-purple-soft",
+    color: "text-[#5a4d9e]",
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" /><circle cx="7" cy="7" r="1" fill="currentColor" />
       </svg>
     ),
   },

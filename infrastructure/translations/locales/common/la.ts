@@ -6,7 +6,7 @@ const common: CommonTranslations = {
     description:
       "Applicatio rei nummariae personalis sine frictione. Sine rationibus, sine nubibus, sine complicationibus. Data tua, solum in dispositivo tuo.",
     keywords:
-      "res nummaria personalis, applicatio, iOS, Android, sumptus, reditus, multi-moneta, offline, secretum",
+      "res nummaria personalis, applicatio, iOS, Android, ratio sumptuum, proposita servandi, sumptus, reditus, multi-moneta, offline, secretum",
   },
   footer: {
     blurb:

@@ -31,6 +31,14 @@ const sections: SectionsTranslations = {
       title: "Estadistica hesakãva",
       desc: "4 tipo grafica: gasto ha jehupyty categoria ha cuenta rupive. Efiltrá ára, cuenta ha categoria rupive.",
     },
+    savings: {
+      title: "Pirapire ñongatu",
+      desc: "Emoheñói ne ñeha'ã monto objetivo ha ára paha opcional ndive, emoinge pirapire nde cuenta gui ha ehecha nde progreso ñeha'ã jasygua ndive.",
+    },
+    budgets: {
+      title: "Hepykuaarã",
+      desc: "Emoĩ límite gasto categoria eiporavóva peguarã, jasypehẽ, arapokõindypehẽ térã arapehẽ ndive. Erecalculá nde límite ciclo mbytépe tekotevẽramo.",
+    },
     multiCurrency: {
       title: "Moneda heta",
       desc: "Osoportá 20+ moneda USD, EUR, MXN, ARS, PYG, BRL ha hetave. Tasa cambio oñembopyahúva ko'ẽ jave.",
@@ -42,6 +50,10 @@ const sections: SectionsTranslations = {
     languages: {
       title: "5 ñe'ẽ",
       desc: "Oĩ English, Español, Deutsch, Avañe'ẽ ha Latina (Latín clásico) pe.",
+    },
+    ads: {
+      title: "Gratis, anuncio discreto ndive",
+      desc: "Opamba'e gratis anuncio rupive: lista-pe ojehe'a contenido rehe, ha anuncio pantalla completa osẽ peteĩ jeýnte minuto-me.",
     },
   },
   howItWorks: {
@@ -65,8 +77,7 @@ const sections: SectionsTranslations = {
     eyebrow: "App ipype",
     title: "Ojejapo ehechamívo opamba'e peteĩ jehechápe.",
     subtitle:
-      "Peteĩ interfaz oñeñamindu'úva peteĩteĩ grafico, cuenta ha categoria oguerekóvo ilugar.",
-    altTransactions: "Pantalla transaccion",
+      "Peteĩ interfaz oñeñamindu'úva peteĩteĩ ñeha'ã, hepykuaarã, grafica ha cuenta oguereko haguã ilugar.",
     altStatistics: "Pantalla estadistica",
     altAccounts: "Pantalla cuenta",
   },

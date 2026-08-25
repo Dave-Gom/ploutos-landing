@@ -6,7 +6,7 @@ const common: CommonTranslations = {
     description:
       "Peteĩ app pirapire rehegua hasýi'ỹre. Cuenta'ỹre, arai'ỹre, mba'asy'ỹre. Ne mba'ekuaarã, nde celular-pe añonte.",
     keywords:
-      "pirapire personal, app, iOS, Android, presupuesto, gasto, jehupyty, offline, ñemigua",
+      "pirapire personal, app, iOS, Android, presupuesto, hepykuaarã, pirapire ñongatu, gasto, jehupyty, offline, ñemigua",
   },
   footer: {
     blurb:

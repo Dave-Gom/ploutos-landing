@@ -32,6 +32,14 @@ const sections: SectionsTranslations = {
       title: "Estadísticas detalladas",
       desc: "4 tipos de gráficas interactivas: gastos e ingresos por categoría y por cuenta. Filtra por fecha, cuenta o categoría.",
     },
+    savings: {
+      title: "Metas de ahorro",
+      desc: "Crea metas con monto objetivo y fecha límite opcional, deposita desde tus cuentas y sigue tu progreso con metas mensuales y mensajes de ánimo.",
+    },
+    budgets: {
+      title: "Presupuestos",
+      desc: "Define límites de gasto para las categorías que elijas, con vista mensual, semanal y diaria. Recalcula tus límites a mitad de ciclo cuando algo cambie.",
+    },
     multiCurrency: {
       title: "Multi-moneda",
       desc: "Soporta 20+ monedas incluyendo USD, EUR, MXN, ARS, PYG, BRL y más. Tasas de cambio actualizadas diariamente.",
@@ -43,6 +51,10 @@ const sections: SectionsTranslations = {
     languages: {
       title: "5 idiomas",
       desc: "Disponible en English, Español, Deutsch, Avañe'ẽ (Guaraní) y Latina (Latín clásico).",
+    },
+    ads: {
+      title: "Gratis, con anuncios discretos",
+      desc: "Todas las funciones son gratis gracias a los anuncios: en las listas se integran al contenido y los de pantalla completa aparecen como máximo una vez por minuto.",
     },
   },
   howItWorks: {
@@ -66,8 +78,7 @@ const sections: SectionsTranslations = {
     eyebrow: "La app por dentro",
     title: "Diseñada para que veas todo de un vistazo.",
     subtitle:
-      "Una interfaz pensada para que cada gráfico, cuenta y categoría tenga su lugar.",
-    altTransactions: "Pantalla de transacciones",
+      "Una interfaz pensada para que cada meta, presupuesto, gráfica y cuenta tenga su lugar.",
     altStatistics: "Pantalla de estadísticas",
     altAccounts: "Pantalla de cuentas",
   },

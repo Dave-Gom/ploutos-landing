@@ -6,7 +6,7 @@ const common: CommonTranslations = {
     description:
       "Una app de finanzas personales sin fricción. Sin cuentas, sin nubes, sin complicaciones. Tus datos, solo en tu dispositivo.",
     keywords:
-      "finanzas personales, app, iOS, Android, presupuesto, gastos, ingresos, multi-moneda, offline, privacidad",
+      "finanzas personales, app, iOS, Android, presupuesto, metas de ahorro, gastos, ingresos, multi-moneda, offline, privacidad",
   },
   footer: {
     blurb:

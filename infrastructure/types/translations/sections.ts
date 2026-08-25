@@ -24,9 +24,12 @@ export type FeaturesTranslations = {
   accounts: FeatureItem;
   transactions: FeatureItem;
   statistics: FeatureItem;
+  savings: FeatureItem;
+  budgets: FeatureItem;
   multiCurrency: FeatureItem;
   privacy: FeatureItem;
   languages: FeatureItem;
+  ads: FeatureItem;
 };
 
 export type StepItem = {
@@ -47,7 +50,6 @@ export type ShowcaseTranslations = {
   eyebrow: string;
   title: string;
   subtitle: string;
-  altTransactions: string;
   altStatistics: string;
   altAccounts: string;
 };

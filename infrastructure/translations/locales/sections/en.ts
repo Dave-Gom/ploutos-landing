@@ -32,6 +32,14 @@ const sections: SectionsTranslations = {
       title: "Detailed statistics",
       desc: "4 types of interactive charts: expenses and income by category and by account. Filter by date, account or category.",
     },
+    savings: {
+      title: "Savings goals",
+      desc: "Create goals with a target amount and an optional deadline, then deposit from your accounts. Track your progress with monthly targets and encouraging messages.",
+    },
+    budgets: {
+      title: "Budgets",
+      desc: "Set spending limits for the categories you choose, with monthly, weekly and daily views. Recalculate your limits mid-cycle when plans change.",
+    },
     multiCurrency: {
       title: "Multi-currency",
       desc: "Supports 20+ currencies including USD, EUR, MXN, ARS, PYG, BRL and more. Exchange rates updated daily.",
@@ -43,6 +51,10 @@ const sections: SectionsTranslations = {
     languages: {
       title: "5 languages",
       desc: "Available in English, Spanish, German, Avañe'ẽ (Guarani) and Latin (Classical Latin).",
+    },
+    ads: {
+      title: "Free, with discreet ads",
+      desc: "Every feature is free, thanks to ads: in lists they blend into the content, and full-screen ads appear at most once per minute.",
     },
   },
   howItWorks: {
@@ -67,8 +79,7 @@ const sections: SectionsTranslations = {
     eyebrow: "Inside the app",
     title: "Designed so you see everything at a glance.",
     subtitle:
-      "An interface crafted so every chart, account and category has its place.",
-    altTransactions: "Transactions screen",
+      "An interface crafted so every goal, budget, chart and account has its place.",
     altStatistics: "Statistics screen",
     altAccounts: "Accounts screen",
   },

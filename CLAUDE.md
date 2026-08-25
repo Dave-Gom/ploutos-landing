@@ -32,7 +32,7 @@ ploutos-landing/
 │   └── components/
 │       ├── Navbar.tsx           # "use client" — glass nav, mobile menu, language selector
 │       ├── HeroSection.tsx      # Hero with copy + phone mockup
-│       ├── FeaturesSection.tsx  # 6 feature cards in 3-col grid
+│       ├── FeaturesSection.tsx  # 9 feature cards in 3-col grid
 │       ├── HowItWorksSection.tsx # 3 steps with arrows
 │       ├── ShowcaseSection.tsx  # 3 phones (tilted) with screenshots
 │       ├── NameSection.tsx      # Greek mythology origin
@@ -59,14 +59,17 @@ ploutos-landing/
 │           └── sections/        # {en,es,de,la,gn}.ts
 ├── public/
 │   └── assets/
-│       └── screenshots/         # App screenshots from simulator
-│           ├── dashboard.png
-│           ├── transactions.png
-│           ├── statistics.png
-│           ├── accounts.png
-│           ├── settings.png
-│           ├── categories.png
-│           └── dashboard-scroll.png
+│       └── screenshots/         # App screenshots from simulator, one folder per locale
+│           └── {en,es,de,la,gn}/
+│               ├── dashboard.png
+│               ├── transactions.png
+│               ├── statistics.png
+│               ├── accounts.png
+│               ├── savings.png
+│               ├── budgets.png
+│               ├── settings.png
+│               ├── categories.png
+│               └── dashboard-scroll.png
 └── package.json
 ```
 
