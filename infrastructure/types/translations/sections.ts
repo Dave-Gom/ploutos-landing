@@ -50,6 +50,7 @@ export type ShowcaseTranslations = {
   eyebrow: string;
   title: string;
   subtitle: string;
+  altTransactions: string;
   altStatistics: string;
   altAccounts: string;
 };

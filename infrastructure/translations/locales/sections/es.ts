@@ -79,6 +79,7 @@ const sections: SectionsTranslations = {
     title: "Diseñada para que veas todo de un vistazo.",
     subtitle:
       "Una interfaz pensada para que cada meta, presupuesto, gráfica y cuenta tenga su lugar.",
+    altTransactions: "Pantalla de transacciones",
     altStatistics: "Pantalla de estadísticas",
     altAccounts: "Pantalla de cuentas",
   },

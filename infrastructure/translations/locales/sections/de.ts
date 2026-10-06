@@ -79,6 +79,7 @@ const sections: SectionsTranslations = {
     title: "Gestaltet, damit du alles auf einen Blick siehst.",
     subtitle:
       "Eine Oberfläche, in der jedes Sparziel, Budget, Diagramm und Konto seinen Platz hat.",
+    altTransactions: "Transaktionsbildschirm",
     altStatistics: "Statistikbildschirm",
     altAccounts: "Kontenbildschirm",
   },

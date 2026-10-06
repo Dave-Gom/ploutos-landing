@@ -80,6 +80,7 @@ const sections: SectionsTranslations = {
     title: "Designata ut omnia uno obtutu videas.",
     subtitle:
       "Interfacies cogitata ut quaeque ratio, propositum, ratio sumptuum et diagramma locum suum habeat.",
+    altTransactions: "Pagina transactionum",
     altStatistics: "Pagina statisticarum",
     altAccounts: "Pagina rationum",
   },

@@ -80,6 +80,7 @@ const sections: SectionsTranslations = {
     title: "Designed so you see everything at a glance.",
     subtitle:
       "An interface crafted so every goal, budget, chart and account has its place.",
+    altTransactions: "Transactions screen",
     altStatistics: "Statistics screen",
     altAccounts: "Accounts screen",
   },

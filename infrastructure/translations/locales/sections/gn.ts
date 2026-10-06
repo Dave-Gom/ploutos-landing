@@ -78,6 +78,7 @@ const sections: SectionsTranslations = {
     title: "Ojejapo ehechamívo opamba'e peteĩ jehechápe.",
     subtitle:
       "Peteĩ interfaz oñeñamindu'úva peteĩteĩ ñeha'ã, hepykuaarã, grafica ha cuenta oguereko haguã ilugar.",
+    altTransactions: "Pantalla transaccion",
     altStatistics: "Pantalla estadistica",
     altAccounts: "Pantalla cuenta",
   },
