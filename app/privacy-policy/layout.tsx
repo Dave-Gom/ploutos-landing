@@ -1,11 +1,11 @@
+import {
+  defaultLocale,
+  getDictionary,
+} from "@/infrastructure/translations/dictionaries";
+import Footer from "@/lib/components/Footer";
+import Navbar from "@/lib/components/Navbar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import {
-  getDictionary,
-  defaultLocale,
-} from "@/infrastructure/translations/dictionaries";
-import Navbar from "@/lib/components/Navbar";
-import Footer from "@/lib/components/Footer";
 import "../globals.css";
 
 const inter = Inter({
@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Ploutos",
+  title: "Privacy Policy - Ploutos",
   description:
     "Privacy Policy for Ploutos, a personal finance manager app for iOS and Android.",
   robots: { index: true, follow: true },

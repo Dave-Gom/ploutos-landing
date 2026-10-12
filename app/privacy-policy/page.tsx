@@ -7,7 +7,7 @@ const PrivacyPolicyPage = () => {
           Privacy Policy
         </h1>
         <p className="mt-1 text-lg font-medium text-text-2">
-          Ploutos — Personal Finance Manager
+          Ploutos - Personal Finance Manager
         </p>
         <p className="mt-4 text-sm text-neutral">
           <strong>Last Updated:</strong> June 2026 &nbsp;·&nbsp;{" "}
@@ -19,10 +19,10 @@ const PrivacyPolicyPage = () => {
         {/* Intro */}
         <p>
           David Gómez (&ldquo;Developer&rdquo;, &ldquo;we&rdquo; or
-          &ldquo;our&rdquo;) has created Ploutos (&ldquo;the
-          Application&rdquo;) as a mobile application for personal finance
-          management. This Privacy Policy explains how information is collected,
-          used, and disclosed when you use the Application.
+          &ldquo;our&rdquo;) has created Ploutos (&ldquo;the Application&rdquo;)
+          as a mobile application for personal finance management. This Privacy
+          Policy explains how information is collected, used, and disclosed when
+          you use the Application.
         </p>
         <p>
           By downloading or using Ploutos, you agree to the terms of this
@@ -54,13 +54,15 @@ const PrivacyPolicyPage = () => {
               </ul>
               <p className="mt-3">
                 For users of the free version, all financial data is stored{" "}
-                <strong className="text-text">exclusively on your device</strong>
+                <strong className="text-text">
+                  exclusively on your device
+                </strong>
                 . We do not have access to it and it is never transmitted to any
                 server.
               </p>
               <p className="mt-2">
-                On iOS, local data is encrypted at rest using SQLCipher
-                (AES-256 encryption).
+                On iOS, local data is encrypted at rest using SQLCipher (AES-256
+                encryption).
               </p>
             </div>
 
@@ -109,8 +111,8 @@ const PrivacyPolicyPage = () => {
                 1.3 Automatically Collected Information
               </h3>
               <p className="mb-4">
-                When you use the Application — whether as a free or subscribed
-                user — certain information is collected automatically through
+                When you use the Application - whether as a free or subscribed
+                user - certain information is collected automatically through
                 third-party services:
               </p>
 
@@ -178,8 +180,8 @@ const PrivacyPolicyPage = () => {
                     d) Advertising Data (Google AdMob)
                   </h4>
                   <p className="mb-2">
-                    The Application displays ads provided by Google AdMob.
-                    AdMob may collect:
+                    The Application displays ads provided by Google AdMob. AdMob
+                    may collect:
                   </p>
                   <ul className="ml-5 list-disc space-y-1">
                     <li>
@@ -389,8 +391,8 @@ const PrivacyPolicyPage = () => {
                   On iOS, the database is encrypted using SQLCipher (AES-256).
                 </li>
                 <li>
-                  Data is not synchronized between devices. If you uninstall
-                  the Application or lose your device, your data cannot be
+                  Data is not synchronized between devices. If you uninstall the
+                  Application or lose your device, your data cannot be
                   recovered.
                 </li>
                 <li>We do not have access to your financial data.</li>
@@ -398,7 +400,7 @@ const PrivacyPolicyPage = () => {
             </div>
             <div>
               <h3 className="mb-2 font-semibold text-text">
-                4.2 Subscribed Users (Cloud Storage — Future)
+                4.2 Subscribed Users (Cloud Storage - Future)
               </h3>
               <ul className="ml-5 list-disc space-y-1">
                 <li>
@@ -410,8 +412,8 @@ const PrivacyPolicyPage = () => {
                   management.
                 </li>
                 <li>
-                  You will be able to download or delete all server-side data
-                  at any time.
+                  You will be able to download or delete all server-side data at
+                  any time.
                 </li>
                 <li>
                   Details of server infrastructure and data jurisdiction will be
@@ -446,9 +448,9 @@ const PrivacyPolicyPage = () => {
             <li>
               <strong className="text-text">Cloud data (subscribers):</strong>{" "}
               Retained on our servers as long as your subscription is active.
-              Upon cancellation, your data will be retained for 30 days to
-              allow for reactivation, after which it will be permanently
-              deleted, unless you request early deletion.
+              Upon cancellation, your data will be retained for 30 days to allow
+              for reactivation, after which it will be permanently deleted,
+              unless you request early deletion.
             </li>
             <li>
               <strong className="text-text">Account information:</strong> Your
@@ -457,8 +459,8 @@ const PrivacyPolicyPage = () => {
             <li>
               <strong className="text-text">Analytics and crash data:</strong>{" "}
               Retained by Firebase in accordance with Google&apos;s data
-              retention policies (typically 14 months for Analytics, 90 days
-              for Crashlytics).
+              retention policies (typically 14 months for Analytics, 90 days for
+              Crashlytics).
             </li>
             <li>
               <strong className="text-text">Advertising data:</strong> Retained
@@ -496,8 +498,8 @@ const PrivacyPolicyPage = () => {
                 6.2 Opting Out of Ad Tracking (iOS)
               </h3>
               <p>
-                When prompted for the first time, you can deny app tracking.
-                You can also change this at any time via{" "}
+                When prompted for the first time, you can deny app tracking. You
+                can also change this at any time via{" "}
                 <span className="font-medium text-text">
                   Settings &gt; Privacy &amp; Security &gt; Tracking
                 </span>
@@ -554,9 +556,9 @@ const PrivacyPolicyPage = () => {
                   contact us at the address indicated below.
                 </li>
                 <li>
-                  <strong className="text-text">Subscribers:</strong> Contact
-                  us to exercise any of these rights regarding your
-                  cloud-stored data.
+                  <strong className="text-text">Subscribers:</strong> Contact us
+                  to exercise any of these rights regarding your cloud-stored
+                  data.
                 </li>
               </ul>
             </div>
@@ -579,8 +581,8 @@ const PrivacyPolicyPage = () => {
             7. Children&apos;s Privacy
           </h2>
           <p>
-            Ploutos is not directed to children under 13 years of age. We do
-            not knowingly collect personal information from children. The
+            Ploutos is not directed to children under 13 years of age. We do not
+            knowingly collect personal information from children. The
             Application contains ads served by Google AdMob; these are
             configured to comply with applicable regulations. If you believe a
             child has provided personal information through the Application,
@@ -600,8 +602,8 @@ const PrivacyPolicyPage = () => {
             website with an updated &ldquo;Last Updated&rdquo; date.
           </p>
           <p className="mb-3">
-            For substantial changes — such as the introduction of server-side
-            data storage or new categories of data collection — we will provide
+            For substantial changes - such as the introduction of server-side
+            data storage or new categories of data collection - we will provide
             a prominent notice within the Application.
           </p>
           <p>

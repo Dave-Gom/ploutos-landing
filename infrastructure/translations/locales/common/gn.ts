@@ -2,7 +2,7 @@ import type { CommonTranslations } from "@/infrastructure/types/translations/com
 
 const common: CommonTranslations = {
   metadata: {
-    title: "Ploutos — Eikuaa ha emohenda ne pirapire hesa'ype",
+    title: "Ploutos - Eikuaa ha emohenda ne pirapire hesa'ype",
     description:
       "Peteĩ app pirapire rehegua hasýi'ỹre. Cuenta'ỹre, arai'ỹre, mba'asy'ỹre. Ne mba'ekuaarã, nde celular-pe añonte.",
     keywords:

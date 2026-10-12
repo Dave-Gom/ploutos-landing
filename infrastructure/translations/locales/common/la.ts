@@ -2,7 +2,7 @@ import type { CommonTranslations } from "@/infrastructure/types/translations/com
 
 const common: CommonTranslations = {
   metadata: {
-    title: "Ploutos — Intellege et ordina pecuniam tuam cum claritate",
+    title: "Ploutos - Intellege et ordina pecuniam tuam cum claritate",
     description:
       "Applicatio rei nummariae personalis sine frictione. Sine rationibus, sine nubibus, sine complicationibus. Data tua, solum in dispositivo tuo.",
     keywords:

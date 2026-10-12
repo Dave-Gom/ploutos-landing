@@ -2,7 +2,7 @@ import type { CommonTranslations } from "@/infrastructure/types/translations/com
 
 const common: CommonTranslations = {
   metadata: {
-    title: "Ploutos — Verstehe und organisiere dein Geld mit Klarheit",
+    title: "Ploutos - Verstehe und organisiere dein Geld mit Klarheit",
     description:
       "Eine reibungslose App für persönliche Finanzen. Keine Konten, keine Clouds, keine Komplikationen. Deine Daten, nur auf deinem Gerät.",
     keywords:
